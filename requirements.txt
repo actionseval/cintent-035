@@ -1,0 +1,11 @@
+scikit-learn
+scikit-image
+scipy
+numpy
+setuptools
+pandas
+pyevtk
+dill
+
+
+
