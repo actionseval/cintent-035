@@ -29,14 +29,14 @@ jobs:
       - name: Get source code
         uses: actions/checkout@v4
 
-      # CINTENT >> INSERT_CINTENT
-      - uses: JavidDitty/setup-cintent@64faaac1333aabc2e0a00af6109b48ec4d8071bf
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          cache: "pip"
+          # cache: "pip"
           python-version: ${{ env.PYTHON_VERSION }}
+
+      # CINTENT >> INSERT_CINTENT
+      - uses: JavidDitty/setup-cintent@64faaac1333aabc2e0a00af6109b48ec4d8071bf
 
       - name: Install dependencies
         run: |
